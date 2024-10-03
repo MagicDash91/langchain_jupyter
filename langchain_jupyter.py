@@ -35,7 +35,7 @@ if uploaded_file:
     
     if st.button("Analyze"):
         # Define the Summarize Chain
-        template = question + """Write a concise summary of the following:
+        template = question + """Answer the question based of the following:
         "{text}"
         CONCISE SUMMARY:"""
         prompt = PromptTemplate.from_template(template)
